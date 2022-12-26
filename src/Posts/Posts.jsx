@@ -22,9 +22,8 @@ export const Posts = () => {
     useEffect(() => {
         if(data.length > 0){
             dispatch(PostsAction.setPosts(data))
-            
         }
-    }, [data])
+    }, [dispatch])
     return(
         <div>
             <button onClick={handleClick}>Submit</button>
